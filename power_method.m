@@ -37,7 +37,7 @@ x(x0,1) = x0;
 err = 100*rand(nr,1);
 % loop starts 
 while sum(abs(err)>=tol)~=0
-  %x(x0,k+1)=A*x(x0,k);
+  x(x0,k+1)=A*x(x0,k);
   %POWER METHOD formula
   %normalizing the obtained vector
   [v i] = max(abs(A*x(x0,k+1)));
