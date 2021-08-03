@@ -35,7 +35,7 @@ k=1
 %x(x0,1) = x0;
 % initial error assumption
 %x0 = [];
-err = 100*rand(nr,1);
+err = 1000000*rand(nr,1);
 % loop starts 
 while sum(abs(err)>=tol)~=0
   x1=A*x0;
